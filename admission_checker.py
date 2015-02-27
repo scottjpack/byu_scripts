@@ -39,9 +39,6 @@ url_two = "https://y.byu.edu/ry/ae/prod/ces/cgi/admissionsStatus.cgi"
 cj = CookieJar()
 opener = urllib2.build_opener(urllib2.HTTPCookieProcessor(cj))
 
-url = "https://cas.byu.edu/cas/login?service=https%3A%2F%2Fy.byu.edu%2Fvalidate%3Ftarget%3Dhttps%253A%252F%252Fy.byu.edu%252Fry%252Fae%252Fprod%252Fces%252Fcgi%252FadmissionsStatus.cgi"
-
-
 response = opener.open(url_one)
 content = response.read()
 
